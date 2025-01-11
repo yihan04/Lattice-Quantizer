@@ -1,6 +1,6 @@
 # Machine Learning Term Project
 
-This repository contains the code for our term project in the **Machine Learning** course at PKU, which focuses on the **reproduction and extension** of key methods from two major works in the field of lattice quantization:
+This repository contains the code for our term project in the **Machine Learning** course at PKU, which focuses on the **reproduction and extension** of key methods from three major works in the field of lattice quantization:
 
 1. *"Optimization and Identification of Lattice Quantizers"* (Erik Agrell, Daniel Pook-Kolb, & Bruce Allen, 2024)
 2. *"Closest Point Search in Lattices"* (Erik Agrell, Thomas Eriksson, Alexander Vardy, & Kenneth Zeger, 2002)
