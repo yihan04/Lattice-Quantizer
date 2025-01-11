@@ -120,10 +120,10 @@ Currently, this script does not have customizable parameters, but you can modify
 
 ## Group Members
 
+- Yihan Geng
+- Zhining Zhang
 - Yangdi Yue
 - Hongxi Song
-- Zhining Zhang
-- Yihan Geng
 
 ## License
 
