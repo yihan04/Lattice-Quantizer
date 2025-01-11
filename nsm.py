@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Date: 2025.01.10
-Author: Yihan Geng, Zhining Zhang
+Author: Yihan Geng
 Group Members: Yangdi Yue, Hongxi Song, Zhining Zhang, Yihan Geng
 
 Description: 
@@ -11,16 +11,13 @@ Description:
 Usage:
     Run the script using: `python nsm.py`
     You can customise parameters using: 
-        `python lattice_constructor.py --step STEP`
+        `python nsm.py --step STEP`
 """
 
 from lattice_constructor import NSM
 import argparse
 import numpy as np
 
-
-def product_nsm(nsm_1, dim_1, nsm_2, dim_2):
-    return ((nsm_1 ** dim_1) * (nsm_2 ** dim_2)) ** (1 / (dim_1 + dim_2))
 
 def main():
     parser = argparse.ArgumentParser(description="Lattice Constructor")
@@ -42,10 +39,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print(product_nsm(
-        nsm_1=0.070095600,
-        dim_1=12,
-        nsm_2=0.080187537,
-        dim_2=2
-    ))
     main()

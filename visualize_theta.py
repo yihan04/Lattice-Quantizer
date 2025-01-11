@@ -71,7 +71,6 @@ def decode(H, r):
     Parameters:
     H (numpy.ndarray): An n x n lower-triangular matrix with positive diagonal elements.
     """
-    print(H)
     n = H.shape[0]
     bound = r**2  # distance bound
     k = n  # Dimension of examined layer
@@ -149,7 +148,7 @@ def visualize(data, times, dim, mode):
 
     plt.tight_layout()
     plt.savefig(f'dim{dim}_mode{mode}.jpg', dpi=1000)
-    plt.show()
+    # plt.show()
 
 
 def get_array():
@@ -171,7 +170,7 @@ def get_array():
     return normalize(Orth(Red(B)))
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Theta Image")
     parser.add_argument("--dim", type=int, default=2)
     parser.add_argument("--mode", type=str, default='fast')
@@ -200,3 +199,7 @@ if __name__ == "__main__":
         #         data.append((r, 1))
         all_data.append(data)
     visualize(all_data, times, dim, mode)
+
+
+if __name__ == "__main__":
+    main()

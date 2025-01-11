@@ -279,7 +279,7 @@ def main():
     B, recorder = train(n, T, Tr, mu, nu, rng)
 
     print(f"Constructed generator matrix for dimension {n}:\n{B}")
-    print(f"Normalized Second Moment (NSM): {NSM(B, 100000, rng):.6f}")  # 计算最终的 NSM
+    print(f"Normalized Second Moment (NSM): {NSM(B, 1000000, rng):.6f}")  # 计算最终的 NSM
 
     np.save(f'record_{args.dim}_{args.mode}.npy', recorder)
 
