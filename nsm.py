@@ -11,7 +11,7 @@ Description:
 Usage:
     Run the script using: `python nsm.py`
     You can customise parameters using: 
-        `python nsm.py --step STEP`
+        `python nsm.py --dim DIM --mode MODE --step STEP`
 """
 
 from lattice_constructor import NSM
@@ -20,10 +20,10 @@ import numpy as np
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Lattice Constructor")
+    parser = argparse.ArgumentParser(description="NSM Calculation")
     parser.add_argument("--dim", type=int, default=2)
     parser.add_argument("--mode", type=str, default='fast')
-    parser.add_argument("--step", type=int, default=1000000)
+    parser.add_argument("--step", type=int, default=5000000)
     parser.add_argument("--seed", type=int, default=0)
     args = parser.parse_args()
 
